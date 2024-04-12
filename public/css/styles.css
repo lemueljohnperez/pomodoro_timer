@@ -1,0 +1,185 @@
+:root
+{
+	--red: rgba(239, 75, 75, 0.95);
+	--white: #FFFFFF;
+	--timer-bg: rgba(255, 255, 255, 0.25);
+}
+
+*
+{
+	margin: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body
+{
+	background-color: #439294;
+	transition: background-color 0.8s ease-in-out;
+}
+
+.container
+{
+	background-color: var(--timer-bg);
+	width: min(90%, 500px);
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	padding: 4em 2em;
+	border-radius: 0.5em;
+}
+
+.navbar 
+{
+    background-color: #439294;
+    padding: 1rem;
+}
+
+.navbar-brand
+{
+	color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img
+{
+    margin-right: 0.5rem;
+    width: 30px;
+    height: auto;
+}
+
+button
+{
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.section-container
+{
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+}
+
+.btn
+{
+	padding: 1em 2em;
+	border-radius: 0.5em;
+	background-color: transparent;
+	color: var(--white);
+	font-size: 15px;
+}
+
+.btn-focus
+{
+	background-color: rgba(0, 0, 0, 0.25);
+	color: var(--white);
+}
+
+.time-btn-container
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#time
+{
+	text-align: center;
+	color: var(--white);
+	font-size: 6em;
+	font-weight: 600;
+}
+
+.btn-container
+{
+	display: flex;
+	justify-content: center;
+	gap: 2em;
+	margin-top: 1em;
+}
+
+#btn-start, #btn-pause
+{
+	font-size: 1.2rem;
+	padding: 1em 2em;
+	border-radius: 0.5em;
+	cursor: pointer;
+	background-color: var(--white);
+}
+
+#btn-reset
+{
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: var(--white);
+	font-size: 2em;
+}
+
+.hide
+{
+	display: none;
+}
+
+.show
+{
+	display: block;
+}
+
+@media only screen and (max-width: 576px)
+{
+    #time
+    {
+        font-size: 2.5em;
+    }
+    
+    .time-btn-container
+    {
+        margin-top: 1em;
+    }
+    
+    .btn-container
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    .container
+    {
+        padding: 2em;
+        width: 90%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .section-container
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn
+    {
+        width: 60%;
+        margin-bottom: 1em;
+    }
+
+    #time
+    {
+        font-size: 3.5em;
+    }
+
+    .navbar-brand img
+    {
+        width: 25px;
+    }
+}

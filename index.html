@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+	<!-- External CSS -->
+	<link rel="stylesheet" type="text/css" href="./public/css/styles.css">
+
+	<link rel="icon" href="https://res.cloudinary.com/dthjiqhlg/image/upload/f_auto,fl_awebp/v1/pomodoro_timer/images/timer_icon.webp">
+
+	<title>Steady Clockwork</title>
+</head>
+
+<body>
+
+	<!-- navbar start -->
+	<nav class="navbar">
+		<a class="navbar-brand">
+			<img loading="lazy" src="https://res.cloudinary.com/dthjiqhlg/image/upload/f_auto,fl_awebp,w_800/v1/pomodoro_timer/images/gear_wheel.webp" width="30" height="30" alt="Gear Wheel">
+			Steady Clockwork
+		</a>
+	</nav>
+	<!-- navbar end -->
+
+	<div class="container">
+		<div class="section-container">
+			<button id="focus" class="btn btn-timer btn-focus">Focus</button>
+
+			<button id="shortbreak" class="btn btn-shortbreak">Short Break</button>
+
+			<button id="longbreak" class="btn btn-longbreak">Long Break</button>
+		</div>
+
+		<div class="time-btn-container">
+			<span id="time"></span>
+			<div class="btn-container">
+				<button onclick="playStartSound()" id="btn-start" class="show">
+					Start	
+				</button>
+				
+				<button onclick="playStartSound()" id="btn-pause" class="hide">
+					Pause
+				</button>
+
+				<button onclick="playStartSound()" id="btn-reset" class="hide">
+					<i class="fa-solid fa-rotate-right"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- External JS -->
+	<script type="text/javascript" src="./public/js/index.js"></script>
+
+</body>
+</html>
